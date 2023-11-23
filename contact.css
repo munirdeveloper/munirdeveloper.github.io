@@ -1,0 +1,136 @@
+@font-face {
+  font-family: font1;
+  src: url(fontone.otf);
+}
+@font-face {
+  font-family: font2;
+  src: url(fonttwo.ttf);
+}
+@font-face {
+  font-family: finish;
+  src: url(finish.ttf);
+}
+@font-face {
+  font-family: hoodville;
+  src: url(hoodville.ttf);
+}
+
+body {
+  background-image: url(/images/background.jpg);
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar-nav {
+  margin: 10px;
+}
+
+.navbar-nav a {
+  margin-right: 50px;
+  font-size: xx-large;
+  font-family: hoodville;
+}
+
+.navbar-nav .nav-link {
+  color: black !important;
+  text-decoration: underline;
+}
+
+.menu-text {
+  font-family: hoodville;
+  color: black;
+}
+
+.send-message-header {
+  font-family: finish;
+  font-size: xx-large;
+}
+
+form {
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 4px solid white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: darkcyan;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+  font-size: 20px;
+  font-family: finish;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-group {
+  display: flex;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons input {
+  margin-left: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+}
+
+.form-group input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+  font-family: "Times New Roman", serif;
+}
+
+.container,
+.form-group input,
+textarea {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="navbarcontainer">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+            <span class="menu-text">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mx-auto">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <a class="nav-link active" href="skills.html">Skills</a>
+              <a class="nav-link active" href="about.html">About me</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col text-center">
+          <h2 class="send-message-header">Send me a message!</h2>
+        </div>
+      </div>
+    </div>
+
+    <form action="mailto:munirtheboxer@gmail.com" method="post" enctype="text/plain">
+      <div class="container mt-4">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="username" maxlength="60" placeholder="Enter your name!"/>
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" maxlength="60" placeholder="Enter your email!" />
+        </div>
+      </div>
+      
+    
+      <textarea
+        name="message"
+        rows="10"
+        cols="30"
+        id="message"
+        placeholder="Enter your message.."
+        maxlength="1000"
+      ></textarea>
+    
+      <div class="options">
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="bp" value="yes"> In Budapest
+          </label>
+          <label>
+            <input type="radio" name="bp" value="no"> Not in Budapest
+          </label>
+        </div>
+      
+        <label>
+          <input type="checkbox" name="inBudapest"> I am in comfortable sharing my email
+        </label>
+      
+        <div class="buttons">
+          <input type="reset" value="Reset">
+          <input type="submit" value="Submit">
+        </div>
+      </div>
+      
+      </div>
+    </form>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <a href="https://github.com/munirdeveloper" target="_blank">
+              <img
+                src="/images/github.png"
+                alt="The Github Logo"
+                class="logo"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4 text-center">Budapest - Hungary</div>
+          <div class="col-md-4 text-right">
+            munirtheboxer@gmail.com &copy; 2023 Munir's Portfolio. All rights
+            reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
