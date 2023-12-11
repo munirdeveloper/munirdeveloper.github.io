@@ -42,6 +42,10 @@ body {
   text-decoration: underline;
 }
 
+.navbar-nav .nav-link.active {
+  color: wheat !important;
+}
+
 .menu-text {
   font-family: hoodville;
   color: black;
@@ -52,6 +56,12 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 20px;
+}
+
+h1 {
+  font-family: finish;
+  color: black;
+  padding: 13px;
 }
 
 h2 {
@@ -68,25 +78,29 @@ p {
   padding: 10px;
 }
 
+article.content {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .media-container {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line when needed */
-  justify-content: center; /* Center items horizontally within the container */
-  gap: 20px; /* Adjust the spacing between items as needed */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .media-container img {
-  max-width: 100%; /* Set a maximum width for the images */
-  height: auto; /* Maintain the aspect ratio */
-  max-height: 300px; /* Set a maximum height for the images if needed */
-  border: 2px solid #000; /* Add a black border with a 2px width */
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border: 2px solid #000;
 }
 
 .media-container video {
-  max-width: 100%; /* Set a maximum width for the video */
-  height: auto; /* Maintain the aspect ratio */
-  max-height: 300px; /* Set a maximum height for the video if needed */
-  border: 2px solid #000; /* Add a black border with a 2px width */
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border: 2px solid #000;
 }
 
 .logo {
@@ -98,6 +112,12 @@ p {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  justify-content: center;
   margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+  border: 0;
+  outline: none;
 }

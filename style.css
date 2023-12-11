@@ -17,7 +17,6 @@
 
 body {
   background-image: url(/images/background.jpg);
-  /*background-size: cover;*/
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -25,6 +24,21 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+nav#skip a {
+  position: absolute;
+  left: -9999px;
+}
+
+nav#skip a:focus {
+  position: static;
+  background-color: white;
+}
+
+nav#skip h2 {
+  position: absolute;
+  left: -9999px;
 }
 
 .navbar-nav {
@@ -40,6 +54,10 @@ body {
 .navbar-nav .nav-link {
   color: black !important;
   text-decoration: underline;
+}
+
+.navbar-nav .nav-link.active {
+  color: wheat !important;
 }
 
 .menu-text {
@@ -64,7 +82,7 @@ body {
 .text-container-wrapper .container {
   width: 100%;
   padding-left: 150px;
-  text-align: left;
+  justify-content: left;
 }
 
 .text-container-wrapper .p-2.bd-highlight {
@@ -108,6 +126,12 @@ body {
   background-color: #333;
   color: #fff;
   padding: 20px;
-  text-align: center;
+  justify-content: center;
   margin-top: auto;
+}
+
+a {
+  text-decoration: none;
+  border: 0;
+  outline: none;
 }
