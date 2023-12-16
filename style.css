@@ -60,6 +60,14 @@ nav#skip h2 {
   color: wheat !important;
 }
 
+#main-content {
+  justify-content: center;
+  font-family: finish;
+}
+
+#main-content h1 {
+  margin-top: 20px;
+}
 .menu-text {
   font-family: hoodville;
   color: black;
