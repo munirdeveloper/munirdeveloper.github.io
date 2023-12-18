@@ -95,12 +95,14 @@ textarea {
 
 .radio-group {
   display: flex;
-  gap: 40px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .radio-group input[type="radio"] {
   margin-right: 5px;
-  transform: scale(0.8);
+  transform: scale(1);
+  margin-bottom: 10px;
 }
 
 .buttons {
@@ -119,6 +121,8 @@ textarea {
   margin-right: 9px;
 }
 
+/* Existing styles... */
+
 .options {
   display: flex;
   flex-direction: column;
@@ -127,12 +131,36 @@ textarea {
 
 .options label {
   font-size: 21px;
+  display: flex;
+  align-items: center;
 }
 
 .options input[type="checkbox"] {
-  transform: scale(1.8);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  outline: none;
   margin-right: 5px;
-  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.options input[type="checkbox"]:checked {
+  background-color: red;
+  border: 2px solid black;
+}
+
+.options input[type="checkbox"]:not(:checked) {
+  background-color: white;
+  border-color: white;
+}
+
+.options input[type="checkbox"] {
+  margin-top: 0;
 }
 
 .container {
